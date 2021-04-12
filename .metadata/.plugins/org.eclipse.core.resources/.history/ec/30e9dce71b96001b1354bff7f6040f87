@@ -1,0 +1,44 @@
+package com.ranford.masters;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class Grid
+{
+  DesiredCapabilities Cap;
+  
+  public void GD() throws MalformedURLException, InterruptedException
+  {
+	 Cap=new DesiredCapabilities();
+	 Cap.setBrowserName("firefox");
+	 Cap.setPlatform(Platform.WINDOWS);
+	 
+	 RemoteWebDriver driver=new RemoteWebDriver(new URL("http://192.168.10.115:4444/wd/hub"), Cap);
+	 
+	 driver.manage().window().maximize();
+	 driver.get("http://122.175.8.158/ranford2/");
+	 
+	 RFBhomepage RHP=PageFactory.initElements(driver, RFBhomepage.class);
+	  RHP.login();
+	  
+		
+Admhomepage AHP=PageFactory.initElements(driver, Admhomepage.class);
+AHP.Branch();
+
+BrDtlpage BDP=PageFactory.initElements(driver, BrDtlpage.class);
+BDP.Nbrnch();
+Thread.sleep(5000);
+
+BranchCreation bc=PageFactory.initElements(driver,BranchCreation.class);
+bc.Branch("Begumpeticici","knr@123","karimnagar","12345","INDIA","Kerala","THIRUVANANTHAPURAM");
+Thread.sleep(5000);
+
+driver.switchTo().alert().accept();
+  }
+
+}

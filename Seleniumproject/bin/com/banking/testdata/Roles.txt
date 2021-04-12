@@ -1,0 +1,5 @@
+Rolename###Roletype###Results
+CashierAB###E
+Cashiercob###E
+Cashiersbh###E
+Cashiersbib###E
