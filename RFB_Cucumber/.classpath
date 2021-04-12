@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="D:/cucumber/cobertura-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/cucumber/cucumber-core-1.2.5.jar" sourcepath="D:/cucumber"/>
+	<classpathentry kind="lib" path="D:/cucumber/cucumber-java-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/cucumber/cucumber-junit-1.2.5.jar"/>
+	<classpathentry kind="lib" path="D:/cucumber/cucumber-jvm-deps-1.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/cucumber/cucumber-reporting-3.10.0.jar"/>
+	<classpathentry kind="lib" path="D:/cucumber/gherkin-2.12.2.jar"/>
+	<classpathentry kind="lib" path="D:/cucumber/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/cucumber/mockito-all-2.0.2-beta.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vinay/Downloads/selenium-server-standalone-3.14.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
